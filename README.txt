@@ -1,6 +1,9 @@
-Interactive Bayesian Optimization with Gaussian Processes.  All files copyright Eric Brochu 2010.
+Interactive Bayesian Optimization with Gaussian Processes.
 
-This is an experimental pre-release version and may contain bugs.  It also has lots of code that you don't really need but I do.
+This is the code used for the experiments in my PhD thesis, which is available at https://circle.ubc.ca/bitstream/handle/2429/30519/ubc_2011_spring_brochu_eric.pdf?sequence=3
+
+All files are copyright 2010, 2011 by Eric Brochu and released under the MIT license.  See license.txt for details.
+
 
 
 === INSTALLATION ===
