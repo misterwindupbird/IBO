@@ -123,6 +123,8 @@ def demoObservations():
             ax.set_xticks([-2,0,2])
             ax.set_yticks([-2,0,2])
 
+        show()
+
 
         m, v = GP.posterior(optx)
         try:
