@@ -334,7 +334,7 @@ def cdirectGP(model, bounds, maxiter, maxtime, maxsample, acqfunc=None, xi=-1, b
 
         lpath = ctypes.util.find_library('ego')
         while lpath is None:
-            for lp in ['/global/home/eric/EGOcode/cpp/libs/libego.so', '/Users/eric/Dropbox/EGOcode/ego/libs/libego.so']:
+            for lp in ['cpp/libs/libego.dylib', '/Users/eric/Dropbox/EGOcode/ego/libs/libego.so']:
                 if os.path.exists(lp):
                     lpath = lp
         if lpath is None:
