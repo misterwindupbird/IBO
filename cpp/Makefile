@@ -32,8 +32,8 @@ RELEASE_FLAGS = -Wall
 RELEASE_LINKFLAGS =  -shared -W1,-soname,libego.so.1 
 endif
 ifeq ($(UNAME), Darwin)
-RELEASE_FLAGS = -arch i386
-RELEASE_LINKFLAGS =  -arch i386 -dynamiclib 
+RELEASE_FLAGS = 
+RELEASE_LINKFLAGS =  -dynamiclib 
 endif
 
 # Source
