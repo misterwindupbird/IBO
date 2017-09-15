@@ -27,11 +27,11 @@ To make sure the system is set up properly, run the unittests in EGOcode/ego.  T
 
 ## Using the Package
 
-The file demo.py provides examples of calling the package.  Basically, you create a GaussianProcess if you have direct observations, or PrefGaussianProcess if you have preference observations.  You can then add data to the GP, and call maximizeEI() or fastUCBGallery() to find informative query points.  
+The file <code>demo.py</code> provides examples of calling the package.  Basically, you create a GaussianProcess if you have direct observations, or PrefGaussianProcess if you have preference observations.  You can then add data to the GP, and call <code>maximizeEI()</code> or <code>fastUCBGallery()</code> to find informative query points.  
 
 The 'bound' argument controls the ranges of the parameters that the queries will return on.  If they are set so that the lower bound is equal to the upper bound, that parameter is fixed at the indicated value.  For example:
 
->>> fastUCBGallery(GP, [[-1, 1.5], [0.5, 0.5]], 4)
+    >>> fastUCBGallery(GP, [[-1, 1.5], [0.5, 0.5]], 4)
 
 will get a gallery of 4 query points over the range [-1, 1.5] for the first parameter, fixing the second parameter at 0.5.
 
