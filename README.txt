@@ -1,4 +1,4 @@
-Interactive Bayesian Optimization with Gaussian Processes.
+# Interactive Bayesian Optimization with Gaussian Processes.
 
 This is the code used for the experiments in my PhD thesis, which is available at https://circle.ubc.ca/bitstream/handle/2429/30519/ubc_2011_spring_brochu_eric.pdf?sequence=3
 
@@ -6,7 +6,7 @@ All files are copyright 2010, 2011 by Eric Brochu and released under the MIT lic
 
 
 
-=== INSTALLATION ===
+## Installation
 
 This package expects you to have Python 2.6.x, NumPy and SciPy installed.  An easy way to get it all at once it to download the Enthought Python Distribution from enthought.com.
 
@@ -25,7 +25,7 @@ You will then need to add the library path (/path/to/EGOcode/cpp/libs/) to your 
 To make sure the system is set up properly, run the unittests in EGOcode/ego.  There may be warnings if the C++ library is not found, but all tests should pass.
 
 
-=== USING THE PACKAGE ===
+## Using the Package
 
 The file demo.py provides examples of calling the package.  Basically, you create a GaussianProcess if you have direct observations, or PrefGaussianProcess if you have preference observations.  You can then add data to the GP, and call maximizeEI() or fastUCBGallery() to find informative query points.  
 
